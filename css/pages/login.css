@@ -1,0 +1,56 @@
+/*Login
+==========================*/
+
+section.login {
+    padding: 60px 0;
+    direction: rtl;
+}
+
+section.login .row > div {
+    text-align: right !important;
+    background: #f1f1f1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+section.login .ui.form .btns.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.login .ui.form button {
+    order: 1;
+
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #F44336 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    color: #FFF !important;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    transition: .5s;
+}
+
+section.login .ui.form button:hover {
+    background: #FF5252 !important;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+/*Error Messages Box*/
+
+.ui.message .list:not(.ui):last-child {
+    text-align: right;
+}
+
+.ui.message .list:not(.ui) li {
+    margin-right: 14px;
+    margin-left: 0;
+}
+
+.ui.message .list:not(.ui) li:before {
+    right: -1em;
+    left: 0;
+}

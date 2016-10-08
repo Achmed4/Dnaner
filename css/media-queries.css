@@ -1,0 +1,108 @@
+
+@media (max-width: 500px) {
+    .tabs .ui.tab .row > .column {
+        width: 100% !important;
+    }
+
+    .sections .products .vertical-layout .row > .column {
+        width: 100% !important;
+    }
+
+    section.vendor-products .products .vertical-layout .row > .column {
+        width: 100% !important;
+    }
+}
+
+/*X-Small Screen*/
+@media (max-width: 767px) {
+    /*Main Style*/
+    .ui.fluid.container {
+        width: auto !important;
+    }
+    /*Top Bar*/
+    .top-bar ul {
+        text-align: center;
+    }
+    /*Cart*/
+    .cart .show-cart {
+        display: none;
+    }
+    /*Search Icon*/
+    .cart-search-logo .search-icon {
+        opacity: 1;
+        visibility: visible;
+    }
+    /*Search Bar*/
+    .cart-search-logo .search-bar {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    .cart-search-logo .search-bar.on {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cart-search-logo .search-bar .ui.input {
+        width: 100%;
+    }
+    /*Menu*/
+    .menu {
+        display: none;
+    }
+    /*Footer*/
+    footer .main-footer .information {
+        text-align: center;
+    }
+
+    /*Adjusting Margin Top For every Page on Mobile*/
+    .slider-ads.fixed,
+    section.sections.fixed,
+    section.product.fixed,
+    section.vendors.fixed,
+    section.vendor.fixed,
+    section.login.fixed,
+    section.register.fixed,
+    section.reset-password.fixed,
+    section.change-password.fixed {
+        margin-top: 80px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    /*Cat*/
+    .cart {
+        width: 47px;
+    }
+}
+
+/*Small Screen*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 1199px) {
+    /*Pages*/
+
+    /*Product*/
+    .product .product-images {
+        text-align: center;
+    }
+    .product .product-info {
+        text-align: center;
+    }
+}
+
+/*Medium Screen*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Large Screen*/
+@media (min-width: 1200px) {
+
+}

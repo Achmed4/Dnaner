@@ -1,0 +1,38 @@
+/*
+    .thumbnail should have height set, preferably with a modifier class.
+
+    <div class="thumbnail">
+    	<img class="thumbnail__img" src="path/to/image">
+    </div>
+*/
+
+//THUMBNAIL
+.image-parent {
+    /*display: inline-block;*/
+    overflow: hidden;       /* cropping larger images */
+    vertical-align: middle;
+    position: relative;     /* this allows us to have more elements within .thumbnail (caption, close button, overlay, icon etc). Make sure you tweak z-index for .thumbnail__image in that case  */
+}
+
+//THUMBNAIL IMAGE
+.image-cover {
+    height: auto;           /* "if you add the image via JavaScript, the img needs to have width: auto; and height: auto; to work in IE 9 or 10." via http://bit.ly/Ge6mc (check under "CSS-Only Technique #2") */
+    max-height: none;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;            /* same as with height: auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*
+	NOTE: 		If you are sure that height and width of your images will always be larger than .thumbnail height and width you can delete min-height and min-width lines from .thumbnail__img to prevent images from downscaling.
+	INSPIRATION: 	CSS-Only Technique #2 from this article http://bit.ly/Ge6mc
+	EXAMPLE: 	http://quick.as/zdrspbg
+	SUPPORT: 	Fuck IE 8, it's (almost) 2014.
+*/

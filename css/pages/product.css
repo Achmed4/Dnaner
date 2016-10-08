@@ -1,0 +1,133 @@
+/*Product
+==========================*/
+
+section.product {
+    padding: 60px 0;
+    direction: rtl;
+}
+
+.product .row > div {
+    margin-bottom: 30px !important;
+}
+
+/*Product Images*/
+.product .product-images {
+    width: 100%;
+}
+
+/*.product .product-images #img_01 {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 10px;
+}*/
+
+.zoomImg {
+    cursor: crosshair;
+}
+
+#gal1 {
+    display: flex;
+    justify-content: center;
+}
+
+#gal1 a {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#gal1 a img {
+    width: 100%;
+}
+
+#gal1 img {
+    border:2px solid white;
+}
+
+.active img {
+    border:2px solid #333 !important;
+}
+
+/*Product Info*/
+.product .product-info .detailes {
+    margin-top: 20px;
+}
+
+.product .product-info .detailes table {
+    width: 100%;
+}
+
+.product .product-info table td {
+    padding: 10px 0;
+}
+
+.product .product-info table td:first-child {
+    font-weight: bold;
+}
+
+.product .product-info table td.colon {
+    padding: 0 5px 0 10px;
+    font-weight: bold;
+}
+
+.product .product-info table td.detail {
+    color: #F44336;
+}
+
+.product .product-info table td.price {
+    font-size: 25px;
+}
+
+.product .product-info #quantity input[type="text"] {
+    width: 30px;
+    height: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 0;
+    border-radius: 25%;
+    box-shadow: 0px 0px 5px 0px #444;
+    text-align: center;
+    outline: 0;
+}
+
+
+.product .product-info #quantity button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.product .product-info #quantity .plus {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.product .product-info #quantity .minus {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product .product-info .purchase-btn .ui.button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #F44336 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    color: #FFF !important;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    transition: .5s;
+}
+
+.product .product-info .purchase-btn .ui.button:hover {
+    background: #FF5252 !important;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.product .product-info .purchase-btn .ui.button i {
+    margin-left: 3px;
+}

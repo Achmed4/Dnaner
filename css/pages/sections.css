@@ -1,0 +1,125 @@
+/*Sections
+==========================*/
+
+.sections {
+    padding: 60px 0;
+}
+
+.sections .right.menu {
+    cursor: pointer;
+}
+
+.sections .head {
+    margin-bottom: 30px;
+}
+
+/*Vertical-Layout*/
+.vertical-layout {
+    display: none;
+}
+
+.vertical-layout .item {
+    height: 350px;
+    width: 220px;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.vertical-layout .item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+}
+
+.vertical-layout .item .image {
+    height: 65%;
+}
+
+.vertical-layout .item .image img {
+    /*width: 100%;*/
+}
+
+.vertical-layout .item .info {
+    height: 35%;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.vertical-layout .item .info .price {
+    /*font-weight: bold;*/
+    font-size: 25px;
+    color: #F44336;
+}
+
+.vertical-layout .item .info ul {
+    margin-top: 10px;
+    font-size: 17px;
+    direction: ltr;
+}
+
+.vertical-layout .item .info ul li {
+    display: inline-block;
+}
+
+.vertical-layout .item .info ul li a {
+    color: #444;
+}
+
+.vertical-layout .item .info ul li:nth-child(2) a {
+    color: #F44336;
+}
+
+.vertical-layout .item .info ul li:last-child a {
+    /*color: #FFC107;*/
+}
+
+/*Horizontal-Layout*/
+.horizontal-layout {
+    display: none;
+    direction: rtl;
+}
+
+.horizontal-layout .ui.items .item .content {
+    padding-right: 14px !important;
+    padding-left: 0 !important;
+}
+
+.horizontal-layout .ui.items .item .content .header:hover {
+    color: rgba(0,0,0,.85);
+}
+
+.horizontal-layout .items .item .meta .price {
+    font-size: 25px;
+    color: #F44336;
+}
+
+.horizontal-layout .items .item .extra .ui.button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #F44336 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    color: #FFF !important;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    transition: .5s;
+}
+
+.horizontal-layout .items .item .extra .ui.button:hover {
+    background: #FF5252 !important;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.horizontal-layout .items .item .extra .ui.button i {
+    margin-left: 3px;
+}
+
+/*jQuery Classes*/
+.vertical-layout.on {
+    display: block;
+}
+
+.horizontal-layout.on {
+    display: block;
+}

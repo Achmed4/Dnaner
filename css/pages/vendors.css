@@ -1,0 +1,22 @@
+/*Vendors
+==========================*/
+
+section.vendors {
+    padding: 60px 0;
+}
+
+section.vendors .item {
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+section.vendors .item h3 {
+    color: #222;
+}
+
+section.vendors .item .image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 25px;
+}
